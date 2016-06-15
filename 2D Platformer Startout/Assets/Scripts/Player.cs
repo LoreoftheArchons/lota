@@ -123,4 +123,26 @@ public class Player : MonoBehaviour {
 
         Application.LoadLevel(Application.loadedLevel);
     }
+    
+
+    //allows player to take damage
+    public void Damage(int dmg)
+    {
+        currHealth -= dmg;
+        gameObject.GetComponent<Animation>().Play("red_flash_player");
+    }
+
+    //knockDur, how long we are going to add force for, knockbackPwr, the power of the knockback, knockbackDir, the direction the kock hits you too
+    public IEnumerator Knockback(float knockDur, float knockbackPwr, Vector3 knockbackDir)
+    {
+        float timer = 0;
+
+        while (knockDur > timer)
+        {
+            timer += Time.deltaTime;
+            rb2d.AddForce(new Vector3(knockbackDir.x * -100, knockbackDir.y * knockbackPwr, transform.position.z));
+        }
+        // in ienumerators, we need to return something, so this will finish this loop and function
+        yield return 0;
+    }
 }
