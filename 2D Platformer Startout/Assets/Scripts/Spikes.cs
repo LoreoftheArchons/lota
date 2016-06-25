@@ -12,6 +12,7 @@ public class Spikes : MonoBehaviour {
 
     }
 
+    //when a player enters teh box collider in 2d
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Player"))
