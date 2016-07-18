@@ -51,6 +51,12 @@ public class TurretAI : MonoBehaviour {
         {
             lookingRight = false;
         }
+
+        if(curHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
+
     }
 
     //activates based off of a range
@@ -101,5 +107,12 @@ public class TurretAI : MonoBehaviour {
             }
         }
     }
+
+    public void Damage(int damage)
+    {
+        curHealth -= damage;
+        gameObject.GetComponent<Animation>().Play("red_flash_player");
+    }
+
 }
 
