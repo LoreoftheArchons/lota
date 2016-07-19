@@ -28,7 +28,7 @@ public class Player : MonoBehaviour {
         currHealth = maxHealth;
 
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 
@@ -68,7 +68,7 @@ public class Player : MonoBehaviour {
                     rb2d.AddForce(Vector2.up * jumpPower / 1.25f);
                 }
             }
-           
+
         }
 
         if (currHealth > maxHealth)
@@ -98,7 +98,7 @@ public class Player : MonoBehaviour {
         float h = Input.GetAxis("Horizontal");
 
         //fake friction/easing x speed of player
-        
+
         if (grounded)
         {
             rb2d.velocity = easeVelocity;
@@ -123,7 +123,7 @@ public class Player : MonoBehaviour {
 
         Application.LoadLevel(Application.loadedLevel);
     }
-    
+
 
     //allows player to take damage
     public void Damage(int dmg)
@@ -136,7 +136,7 @@ public class Player : MonoBehaviour {
     public IEnumerator Knockback(float knockDur, float knockbackPwr, Vector3 knockbackDir)
     {
         float timer = 0;
-
+        rb2d.velocity = new Vector2(rb2d.velocity.x, 0);
         while (knockDur > timer)
         {
             timer += Time.deltaTime;
