@@ -24,11 +24,13 @@ public class TurretAI : MonoBehaviour {
     public Transform target;
     public Animator anim;
     public Transform shootPointLeft, shootPointRight;
+    private GameMaster gm;
 
 
     void Awake()
     {
         anim = gameObject.GetComponent<Animator>();
+        gm = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
     }
 
     void Start()
@@ -55,6 +57,7 @@ public class TurretAI : MonoBehaviour {
         if(curHealth <= 0)
         {
             Destroy(gameObject);
+            gm.points += 10;
         }
 
     }

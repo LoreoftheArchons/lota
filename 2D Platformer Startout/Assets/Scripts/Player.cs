@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class Player : MonoBehaviour {
@@ -18,6 +19,7 @@ public class Player : MonoBehaviour {
     //references
     private Rigidbody2D rb2d;
     private Animator anim;
+    private GameMaster gm;
 
 	// Use this for initialization
 	void Start () {
@@ -26,7 +28,7 @@ public class Player : MonoBehaviour {
 
         //just starting the game, have health
         currHealth = maxHealth;
-
+        gm = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
 	}
 
 	// Update is called once per frame
@@ -120,8 +122,8 @@ public class Player : MonoBehaviour {
 
     void Die()
     {
-
-        Application.LoadLevel(Application.loadedLevel);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //Application.LoadLevel(Application.loadedLevel);
     }
 
 
@@ -144,5 +146,14 @@ public class Player : MonoBehaviour {
         }
         // in ienumerators, we need to return something, so this will finish this loop and function
         yield return 0;
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.CompareTag("Coin"))
+        {
+            Destroy(col.gameObject);
+            gm.points += 1;
+        }
     }
 }
