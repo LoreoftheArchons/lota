@@ -6,6 +6,7 @@ public class GameMaster : MonoBehaviour {
 
     public int points;
     public Text pointsText;
+    public Text InputText;
 
     void Update()
     {

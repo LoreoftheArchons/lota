@@ -7,3 +7,5 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/maintestground.unity
+  - enabled: 1
+    path: Assets/Scenes/testground2.unity
