@@ -20,6 +20,7 @@ public class Door : MonoBehaviour {
             gm.InputText.text = ("[E] to Enter");
             if (Input.GetKeyDown("e"))
             {
+                SaveScore();
                 SceneManager.LoadScene("testground2");
             }
         }
@@ -30,6 +31,7 @@ public class Door : MonoBehaviour {
         {
             if (Input.GetKeyDown("e"))
             {
+                SaveScore();
                 SceneManager.LoadScene("testground2");
             }
         }
@@ -40,5 +42,10 @@ public class Door : MonoBehaviour {
         {
             gm.InputText.text = (" ");
         }
+    }
+
+    void SaveScore()
+    {
+        PlayerPrefs.SetInt("Score", gm.points);
     }
 }
