@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameMaster : MonoBehaviour {
 
@@ -14,7 +15,7 @@ public class GameMaster : MonoBehaviour {
     {
         if (PlayerPrefs.HasKey("Score"))
         {
-            if(Application.loadedLevel == 0)
+            if(SceneManager.GetActiveScene().buildIndex == 0)
             {
                 PlayerPrefs.DeleteKey("Score");
                 points = 0;
