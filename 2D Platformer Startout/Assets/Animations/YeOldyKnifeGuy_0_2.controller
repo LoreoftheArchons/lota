@@ -13,19 +13,19 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Grounded
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Attacking
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -491,10 +491,10 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 110201672}
-    m_Position: {x: 252, y: 108, z: 0}
+    m_Position: {x: 216, y: 108, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 110213004}
-    m_Position: {x: 612, y: 108, z: 0}
+    m_Position: {x: 576, y: 108, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 110270392}
     m_Position: {x: 408, y: -12, z: 0}
