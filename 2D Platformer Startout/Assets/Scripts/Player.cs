@@ -10,6 +10,7 @@ public class Player : MonoBehaviour {
 
     //bools
     public bool grounded;
+    public bool isLeft;
     public bool canDoubleJump;
     public bool wallSliding;
     public bool facingRight = true;
@@ -41,6 +42,7 @@ public class Player : MonoBehaviour {
 
         //sets theparameters in the animator
         anim.SetBool("Grounded", grounded);
+        anim.SetBool("isLeft", isLeft);
         //if output is negative, will be positive, be easier to check if moving (rb2d.velocity.x will take in the players speed, rather then just the the A/D or left/right key
         anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
 
@@ -49,11 +51,13 @@ public class Player : MonoBehaviour {
         {
             transform.localScale = new Vector3(-0.1f, 0.1f, 0.1f);
             facingRight = false;
+            isLeft = true;
         }
         if (Input.GetAxis("Horizontal") > 0.1f)
         {
             transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
             facingRight = true;
+            isLeft = false;
         }
 
         //triggers the SPACE key to jump

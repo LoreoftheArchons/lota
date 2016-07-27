@@ -756,9 +756,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.028482553}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.056965}
 --- !u!114 &362305435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1834,7 +1834,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 8
   m_TargetDisplay: 0
 --- !u!224 &681002318
 RectTransform:
@@ -3221,6 +3221,7 @@ MonoBehaviour:
   speed: 50
   jumpPower: 200
   grounded: 0
+  isLeft: 0
   canDoubleJump: 0
   wallSliding: 0
   facingRight: 1
@@ -3787,6 +3788,7 @@ GameObject:
   - 114: {fileID: 2090075334}
   - 114: {fileID: 2090075335}
   - 114: {fileID: 2090075336}
+  - 114: {fileID: 2090075337}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3910,6 +3912,23 @@ MonoBehaviour:
   - {fileID: 21300002, guid: 4a03839c618f5aa4f8265e05043d9e9b, type: 3}
   - {fileID: 21300000, guid: 4a03839c618f5aa4f8265e05043d9e9b, type: 3}
   HeartUI: {fileID: 2134203189}
+--- !u!114 &2090075337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2090075328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2adce71db5b64d54587af16a1c155c19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smoothTimeY: 0.05
+  smoothTimeX: 0.05
+  player: {fileID: 0}
+  bounds: 1
+  minCameraPos: {x: -100, y: 6.12, z: -10}
+  maxCameraPos: {x: 1000, y: 1000, z: 0}
 --- !u!1 &2099306905
 GameObject:
   m_ObjectHideFlags: 0
