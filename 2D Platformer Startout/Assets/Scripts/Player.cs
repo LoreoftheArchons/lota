@@ -47,12 +47,12 @@ public class Player : MonoBehaviour {
         //flips player
         if (Input.GetAxis("Horizontal") < -0.1f)
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            transform.localScale = new Vector3(-0.1f, 0.1f, 0.1f);
             facingRight = false;
         }
         if (Input.GetAxis("Horizontal") > 0.1f)
         {
-            transform.localScale = new Vector3(1, 1, 1);
+            transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
             facingRight = true;
         }
 
