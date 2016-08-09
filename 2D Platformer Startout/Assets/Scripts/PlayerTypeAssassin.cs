@@ -9,7 +9,10 @@
 // -1 maxSpeed
 // -10 speed
 // -10 jumpPower
-//
+
+// NEED TO FIX THESE NUMBERS
+// AND TEST THE FEASIBILITY OF THE SPEED AND HEALTH
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
