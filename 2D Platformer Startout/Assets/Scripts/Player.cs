@@ -5,8 +5,8 @@ using System.Collections;
 public class Player : MonoBehaviour {
     //floats
     public float maxspeed = 3;
-    public float speed = 50;
-    public float jumpPower = 50;
+    public float speed = 100;
+    public float jumpPower = 100;
 
     //bools
     public bool grounded;

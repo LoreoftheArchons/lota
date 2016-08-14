@@ -1,20 +1,17 @@
-﻿// The Warrior Class
-
-// Skirmisher, Valor, Assault
-// 2nd highest health, 3rd lowest speed
-
-
+﻿// The Necromancer Class
+// Forbidden, Berserker, Alteration
+// 4th lowest speed, 3rd highest health
 
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class PlayerTypeWarrior : MonoBehaviour {
+public class PlayerTypeNecromancer : MonoBehaviour {
 	//floats
-	public float maxspeed = 3;
-	public float speed = 80;
-	public float jumpPower = 80;
+	public float maxspeed = 2;
+	public float speed = 100;
+	public float jumpPower = 100;
 
 	//bools
 	public bool grounded;
@@ -23,7 +20,7 @@ public class PlayerTypeWarrior : MonoBehaviour {
 	public bool facingRight = true;
 	//stats
 	public int currHealth;
-	public int maxHealth=130;
+	public int maxHealth=110;
 
 	//references
 	private Rigidbody2D rb2d;
@@ -231,3 +228,5 @@ public class PlayerTypeWarrior : MonoBehaviour {
 		}
 	}
 }
+
+

@@ -1,8 +1,7 @@
-﻿// The Warrior Class
+﻿// The Templar Class
 
-// Skirmisher, Valor, Assault
-// 2nd highest health, 3rd lowest speed
-
+// Holy Magic, Skirmisher, Valor
+// Highest Health, second lowest speed
 
 
 
@@ -10,11 +9,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class PlayerTypeWarrior : MonoBehaviour {
+public class PlayerTypeTemplar : MonoBehaviour {
 	//floats
-	public float maxspeed = 3;
-	public float speed = 80;
-	public float jumpPower = 80;
+	public float maxspeed = 5;
+	public float speed = 40;
+	public float jumpPower = 40;
 
 	//bools
 	public bool grounded;
@@ -23,7 +22,7 @@ public class PlayerTypeWarrior : MonoBehaviour {
 	public bool facingRight = true;
 	//stats
 	public int currHealth;
-	public int maxHealth=130;
+	public int maxHealth=100;
 
 	//references
 	private Rigidbody2D rb2d;
@@ -231,3 +230,5 @@ public class PlayerTypeWarrior : MonoBehaviour {
 		}
 	}
 }
+
+

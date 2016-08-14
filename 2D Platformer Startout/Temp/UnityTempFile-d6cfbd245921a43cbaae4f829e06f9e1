@@ -73,6 +73,10 @@
 -define:UNITY_EDITOR
 -define:UNITY_EDITOR_64
 -define:UNITY_EDITOR_OSX
+'Assets/PlayerType1.cs'
+'Assets/PlayerType2.cs'
+'Assets/PlayerType3.cs'
+'Assets/PlayerType4.cs'
 'Assets/Scripts/Attack_Cone.cs'
 'Assets/Scripts/Bullet.cs'
 'Assets/Scripts/CameraFollow.cs'
@@ -83,6 +87,9 @@
 'Assets/Scripts/HUD.cs'
 'Assets/Scripts/PauseMenu.cs'
 'Assets/Scripts/Player.cs'
+'Assets/Scripts/PlayerTypeAssassin.cs'
+'Assets/Scripts/PlayerTypeMage.cs'
+'Assets/Scripts/PlayerTypeWarrior.cs'
 'Assets/Scripts/Spikes.cs'
 'Assets/Scripts/TurretAI.cs'
 'Assets/Scripts/attackTrigger.cs'

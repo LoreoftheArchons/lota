@@ -1,7 +1,6 @@
-﻿// The Warrior Class
-
-// Skirmisher, Valor, Assault
-// 2nd highest health, 3rd lowest speed
+﻿// The Wizard/Mage Class
+//Elemental, Alteration, Telepathic
+//3rd Lowest Health (Tied with Wizard), 3rd Highest Speed
 
 
 
@@ -10,11 +9,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class PlayerTypeWarrior : MonoBehaviour {
+public class PlayerTypeWizard : MonoBehaviour {
 	//floats
-	public float maxspeed = 3;
-	public float speed = 80;
-	public float jumpPower = 80;
+	public float maxspeed = 4;
+	public float speed = 110;
+	public float jumpPower = 110;
 
 	//bools
 	public bool grounded;
@@ -23,7 +22,7 @@ public class PlayerTypeWarrior : MonoBehaviour {
 	public bool facingRight = true;
 	//stats
 	public int currHealth;
-	public int maxHealth=130;
+	public int maxHealth=90;
 
 	//references
 	private Rigidbody2D rb2d;
@@ -231,3 +230,5 @@ public class PlayerTypeWarrior : MonoBehaviour {
 		}
 	}
 }
+
+

@@ -1,7 +1,11 @@
-﻿// The Warrior Class
+﻿// The Scientist Class
 
-// Skirmisher, Valor, Assault
-// 2nd highest health, 3rd lowest speed
+// Support, Assault, Medic
+// Slowest Character, second lowest health in the Game
+// Abilities Help him a lot
+// Drones, and other machines to help him
+// Also has high damage
+
 
 
 
@@ -10,11 +14,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class PlayerTypeWarrior : MonoBehaviour {
+public class PlayerTypeScientist : MonoBehaviour {
 	//floats
-	public float maxspeed = 3;
-	public float speed = 80;
-	public float jumpPower = 80;
+	public float maxspeed = 2;
+	public float speed = 60;
+	public float jumpPower = 60;
 
 	//bools
 	public bool grounded;
@@ -23,7 +27,7 @@ public class PlayerTypeWarrior : MonoBehaviour {
 	public bool facingRight = true;
 	//stats
 	public int currHealth;
-	public int maxHealth=130;
+	public int maxHealth=80;
 
 	//references
 	private Rigidbody2D rb2d;
@@ -231,3 +235,5 @@ public class PlayerTypeWarrior : MonoBehaviour {
 		}
 	}
 }
+
+

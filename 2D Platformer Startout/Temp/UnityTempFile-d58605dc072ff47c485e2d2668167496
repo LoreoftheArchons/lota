@@ -5,8 +5,6 @@
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll'
 -r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll'
 -r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll'
--r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll'
--r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll'
 -r:'/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll'
 -r:'/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll'
@@ -75,10 +73,10 @@
 -define:UNITY_EDITOR
 -define:UNITY_EDITOR_64
 -define:UNITY_EDITOR_OSX
-'Assets/PlayerTyoe4.cs'
 'Assets/PlayerType1.cs'
 'Assets/PlayerType2.cs'
 'Assets/PlayerType3.cs'
+'Assets/PlayerType4.cs'
 'Assets/Scripts/Attack_Cone.cs'
 'Assets/Scripts/Bullet.cs'
 'Assets/Scripts/CameraFollow.cs'
@@ -89,9 +87,9 @@
 'Assets/Scripts/HUD.cs'
 'Assets/Scripts/PauseMenu.cs'
 'Assets/Scripts/Player.cs'
-'Assets/Scripts/PlayerType2.cs'
-'Assets/Scripts/PlayerType3.cs'
-'Assets/Scripts/PlayerType4.cs'
+'Assets/Scripts/PlayerTypeAssassin.cs'
+'Assets/Scripts/PlayerTypeMage.cs'
+'Assets/Scripts/PlayerTypeWarrior.cs'
 'Assets/Scripts/Spikes.cs'
 'Assets/Scripts/TurretAI.cs'
 'Assets/Scripts/attackTrigger.cs'

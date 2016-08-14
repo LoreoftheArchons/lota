@@ -4,24 +4,18 @@
 // Dps, high risk, high reward
 // Higher health than wizard, higher dmg
 
-// This player has higher maxHealth but lower maxSpeed and lower jumpPower
-// +20 maxHealth
-// -1 maxSpeed
-// -10 speed
-// -10 jumpPower
 
-// NEED TO FIX THESE NUMBERS
-// AND TEST THE FEASIBILITY OF THE SPEED AND HEALTH
+
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class Player : MonoBehaviour {
+public class PlayerTypeAssassin : MonoBehaviour {
 	//floats
-	public float maxspeed = 2;
-	public float speed = 40;
-	public float jumpPower = 40;
+	public float maxspeed = 5;
+	public float speed = 140;
+	public float jumpPower = 140;
 
 	//bools
 	public bool grounded;
@@ -30,7 +24,7 @@ public class Player : MonoBehaviour {
 	public bool facingRight = true;
 	//stats
 	public int currHealth;
-	public int maxHealth=120;
+	public int maxHealth=100;
 
 	//references
 	private Rigidbody2D rb2d;

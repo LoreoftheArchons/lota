@@ -1,27 +1,17 @@
-﻿// The Wizard/Mage Class
-//Elemental, Alteration, Telepathic
-//3rd Lowest Health (Tied with Wizard), 3rd Highest Speed
+﻿// The Voidmancer Class
 
-
-// This player has a higher maxSpeed and lower speed and lower jumpPower
-//
-// +2 maxspeed
-// -10 speed
-// -10 jumpPower
-// -+0 maxHealth
-//
-// NEED TO FIX THESE NUMBERS
-// AND TEST THE FEASIBILITY OF THE SPEED AND HEALTH
+// Wielder of unholy and holy magic with insight into the forces of the universe. 
+// This class has the Forbidden, Healing Arts and the Alteration trees.
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class Player : MonoBehaviour {
+public class PlayerTypeVoidmancer : MonoBehaviour {
 	//floats
-	public float maxspeed = 5;
-	public float speed = 40;
-	public float jumpPower = 40;
+	public float maxspeed = 4;
+	public float speed = 110;
+	public float jumpPower = 110;
 
 	//bools
 	public bool grounded;
@@ -30,7 +20,7 @@ public class Player : MonoBehaviour {
 	public bool facingRight = true;
 	//stats
 	public int currHealth;
-	public int maxHealth=100;
+	public int maxHealth = 90;
 
 	//references
 	private Rigidbody2D rb2d;
@@ -238,5 +228,6 @@ public class Player : MonoBehaviour {
 		}
 	}
 }
+
 
 
