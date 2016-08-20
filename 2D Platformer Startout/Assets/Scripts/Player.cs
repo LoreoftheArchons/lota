@@ -47,13 +47,13 @@ public class Player : MonoBehaviour {
         anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
 
         //flips player
-        if (Input.GetAxis("Horizontal") < -0.1f)
+        if (Input.GetAxis("Horizontal") < -0.001f)
         {
-            transform.localScale = new Vector3(-0.1f, 0.1f, 0.1f);
+            transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
             facingRight = false;
             isLeft = true;
         }
-        if (Input.GetAxis("Horizontal") > 0.1f)
+        if (Input.GetAxis("Horizontal") > 0.001f)
         {
             transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
             facingRight = true;
