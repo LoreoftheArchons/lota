@@ -1,0 +1,150 @@
+fileFormatVersion: 2
+guid: f92316f5bd4a0b84dbcb836e1551d3b5
+timeCreated: 1471884682
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Prototype Emerhide Playerground Assets_0
+    21300002: Prototype Emerhide Playerground Assets_1
+    21300004: Prototype Emerhide Playerground Assets_2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 18
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Prototype Emerhide Playerground Assets_0
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 1174
+        width: 2677
+        height: 282
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 457.02133, y: 46.22534}
+        - {x: 454.02133, y: 49.22534}
+        - {x: -456.97867, y: 49.22534}
+        - {x: -456.97867, y: -47.77466}
+        - {x: 450.02133, y: -47.77466}
+        - {x: 451.02133, y: -46.77466}
+        - {x: 451.02133, y: 32.22534}
+        - {x: 457.02133, y: 33.22534}
+    - name: Prototype Emerhide Playerground Assets_1
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1643
+        width: 2650
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -452.104, y: 44.81067}
+        - {x: -452.104, y: -43.18933}
+        - {x: 453.896, y: -43.18933}
+        - {x: 453.896, y: 44.81067}
+    - name: Prototype Emerhide Playerground Assets_2
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 112
+        width: 1081
+        height: 901
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -124.60533, y: -145.77066}
+        - {x: -125.60533, y: -148.77066}
+        - {x: -125.60533, y: -149.77066}
+        - {x: -123.60533, y: -153.77066}
+        - {x: -117.60533, y: -153.77066}
+        - {x: -117.60533, y: -150.77066}
+        - {x: -121.60533, y: -145.77066}
+      - - {x: 39.39467, y: -115.77066}
+        - {x: 41.39467, y: -124.77066}
+        - {x: 41.39467, y: -126.77066}
+        - {x: 38.39467, y: -124.77066}
+        - {x: 35.39467, y: -127.77066}
+        - {x: 35.39467, y: -126.77066}
+        - {x: 32.39467, y: -121.77066}
+        - {x: 29.394669, y: -122.77066}
+        - {x: 29.394669, y: -126.77066}
+        - {x: 27.394669, y: -124.77066}
+        - {x: 24.394669, y: -123.77066}
+        - {x: 21.394669, y: -126.77066}
+        - {x: 21.394669, y: -128.77066}
+        - {x: 22.394669, y: -130.77066}
+        - {x: 20.394669, y: -128.77066}
+        - {x: 6.3946686, y: -64.77066}
+        - {x: 124.39467, y: -71.77066}
+        - {x: 128.39467, y: -66.77066}
+        - {x: 143.39467, y: -82.77066}
+        - {x: 154.39467, y: -89.77066}
+        - {x: 182.39467, y: -70.77066}
+        - {x: 185.39467, y: -51.77066}
+        - {x: 185.39467, y: 61.22934}
+        - {x: 127.39467, y: 146.22934}
+        - {x: 114.39467, y: 154.22934}
+        - {x: -146.60533, y: 154.22934}
+        - {x: -184.60533, y: 143.22934}
+        - {x: -184.60533, y: -133.77066}
+        - {x: -174.60533, y: -153.77066}
+        - {x: 97.39467, y: -153.77066}
+        - {x: 97.39467, y: -150.77066}
+        - {x: 80.39467, y: -120.77066}
+      - - {x: -45.60533, y: -115.77066}
+        - {x: -44.60533, y: -118.77066}
+        - {x: -36.60533, y: -118.77066}
+        - {x: -34.60533, y: -116.77066}
+        - {x: -35.60533, y: -113.77066}
+        - {x: -43.60533, y: -113.77066}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
