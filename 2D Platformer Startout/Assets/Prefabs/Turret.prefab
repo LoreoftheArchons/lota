@@ -331,6 +331,7 @@ MonoBehaviour:
   anim: {fileID: 0}
   shootPointLeft: {fileID: 476156}
   shootPointRight: {fileID: 440710}
+  gm: {fileID: 0}
 --- !u!114 &11442830
 MonoBehaviour:
   m_ObjectHideFlags: 1

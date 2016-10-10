@@ -42,6 +42,10 @@ public class PauseMenu : MonoBehaviour {
         paused = false;
     }
 
+    public void Inventory()
+    {
+        
+    }
     public void Restart(){
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
