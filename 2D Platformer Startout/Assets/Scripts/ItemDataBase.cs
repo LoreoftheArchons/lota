@@ -14,7 +14,7 @@ public class ItemDataBase : MonoBehaviour
         /*clarification: so if we just use Items.json, then it will be built only when we build the game, 
          *if we want to edit this stuff, we have to take it from StreamingAssets, a file that will load 
          * but you can also edit*/
-        itemData = JsonMapper.ToObject(File.ReadAllText(Application.dataPath + "/StreamingAssets/Items.json"));
+        itemData = JsonMapper.ToObject(File.ReadAllText(Application.dataPath + "/StreamingData/Items.json"));
         ConstructItemDatabase();
 
         Debug.Log(GetItemByID(0).Description);
